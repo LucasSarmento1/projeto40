@@ -6,7 +6,7 @@ class Game{
     }
 
     handleelements(){
-    form.hideelements();
+    form.hide();
 
     this.resettitle.html("Reiniciar jogo");
     this.resettitle.class("resetText");
@@ -77,7 +77,11 @@ class Game{
                      if(index === player.index){
                          
                        //add code to display the player's name on the respective basket.
-                       Text(allPlayers[plr].name ,x-25,y+25);
+                       stroke("purple");
+                       fill("white");
+                       textSize(20);
+
+                       text(allPlayers[plr].name ,x-25,y+25);
                          
                      }
                     
